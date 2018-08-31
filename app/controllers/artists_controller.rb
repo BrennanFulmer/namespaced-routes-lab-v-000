@@ -8,6 +8,8 @@ class ArtistsController < ApplicationController
   end
 
   def new
+binding.pry 
+    # need to redirect if allow_create_artists = false
     @artist = Artist.new
   end
 
