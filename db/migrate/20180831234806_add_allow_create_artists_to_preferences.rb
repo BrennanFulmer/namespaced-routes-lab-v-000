@@ -1,5 +1,5 @@
 
-class AddAllowCreateSongsToPreferences < ActiveRecord::Migration
+class AddAllowCreateArtistsToPreferences < ActiveRecord::Migration
   
   def change
     add_column :preferences, :allow_create_artists, :boolean
