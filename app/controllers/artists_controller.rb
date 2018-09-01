@@ -11,8 +11,11 @@ class ArtistsController < ApplicationController
     
 binding.pry 
   # need to redirect if allow_create_artists = false
-  
-    @artist = Artist.new
+    if Preference.first.allow_create_artists
+      @artist = Artist.new
+    else
+      
+    end
   end
 
   def create
